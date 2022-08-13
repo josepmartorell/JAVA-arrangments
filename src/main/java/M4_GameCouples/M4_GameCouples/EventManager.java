@@ -14,6 +14,7 @@ public class EventManager implements ActionListener{
 	Random r = new Random();
 	int[] keys = {1,2,3,4,5,6,7,8,
 			1,2,3,4,5,6,7,8};
+	int[]colorKey = new int[16];
 
 	/**
 	 * @param gi
@@ -24,7 +25,6 @@ public class EventManager implements ActionListener{
 	}
 	
 	public int[] colorPositioner(){
-	    System.out.println(Arrays.toString(keys));
         for (int i=0; i<keys.length; i++) {
             int posAleatoria = r.nextInt(keys.length);
             int temp = keys[i];
@@ -32,7 +32,9 @@ public class EventManager implements ActionListener{
             keys[posAleatoria] = temp;
         }
         //System.out.println(Arrays.toString(keys));
-        return keys;
+		this.colorKey = keys;
+		System.out.println(colorKey[1]);
+        return colorKey;
 	}
 	
 	public void colorSwitcher(JToggleButton tg, int key) {
