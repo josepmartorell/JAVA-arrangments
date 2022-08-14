@@ -11,10 +11,7 @@ import javax.swing.JToggleButton;
 public class EventManager implements ActionListener{
 	
 	GameInterface gi;
-	Random r = new Random();
-	int[] keys = {1,2,3,4,5,6,7,8,
-			1,2,3,4,5,6,7,8};
-	int[]colorKey = new int[16];
+	Integer[]random = new Integer[16];
 
 	/**
 	 * @param gi
@@ -24,16 +21,17 @@ public class EventManager implements ActionListener{
 		this.gi = gi;
 	}
 	
-	public int[] colorPositioner(){
-        for (int i=0; i<keys.length; i++) {
-            int posAleatoria = r.nextInt(keys.length);
-            int temp = keys[i];
-            keys[i] = keys[posAleatoria];
-            keys[posAleatoria] = temp;
+	public Integer[] colorPositioner(){
+        Random r = new Random();
+        Integer[] colorKey = {1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8};
+
+        for (int i=0; i<colorKey.length; i++) {
+            int posAleatoria = r.nextInt(colorKey.length);
+            int temp = colorKey[i];
+            colorKey[i] = colorKey[posAleatoria];
+            colorKey[posAleatoria] = temp;
         }
-        //System.out.println(Arrays.toString(keys));
-		this.colorKey = keys;
-		System.out.println(colorKey[1]);
+ 
         return colorKey;
 	}
 	
@@ -71,23 +69,24 @@ public class EventManager implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		random = colorPositioner();
 		if(e.getActionCommand() == "RESTART") {
-			colorSwitcher(gi.tg1, colorPositioner()[0]);
-			colorSwitcher(gi.tg2, colorPositioner()[1]);
-			colorSwitcher(gi.tg3, colorPositioner()[2]);
-			colorSwitcher(gi.tg4, colorPositioner()[3]);
-			colorSwitcher(gi.tg5, colorPositioner()[4]);
-			colorSwitcher(gi.tg6, colorPositioner()[5]);
-			colorSwitcher(gi.tg7, colorPositioner()[6]);
-			colorSwitcher(gi.tg8, colorPositioner()[7]);
-			colorSwitcher(gi.tg9, colorPositioner()[8]);
-			colorSwitcher(gi.tg10, colorPositioner()[9]);
-			colorSwitcher(gi.tg11, colorPositioner()[10]);
-			colorSwitcher(gi.tg12, colorPositioner()[11]);
-			colorSwitcher(gi.tg13, colorPositioner()[12]);
-			colorSwitcher(gi.tg14, colorPositioner()[13]);
-			colorSwitcher(gi.tg15, colorPositioner()[14]);
-			colorSwitcher(gi.tg16, colorPositioner()[15]);
+			colorSwitcher(gi.tg1, random[0]);
+			colorSwitcher(gi.tg2, random[1]);
+			colorSwitcher(gi.tg3, random[2]);
+			colorSwitcher(gi.tg4, random[3]);
+			colorSwitcher(gi.tg5, random[4]);
+			colorSwitcher(gi.tg6, random[5]);
+			colorSwitcher(gi.tg7, random[6]);
+			colorSwitcher(gi.tg8, random[7]);
+			colorSwitcher(gi.tg9, random[8]);
+			colorSwitcher(gi.tg10, random[9]);
+			colorSwitcher(gi.tg11, random[10]);
+			colorSwitcher(gi.tg12, random[11]);
+			colorSwitcher(gi.tg13, random[12]);
+			colorSwitcher(gi.tg14, random[13]);
+			colorSwitcher(gi.tg15, random[14]);
+			colorSwitcher(gi.tg16, random[15]);
 	
 		}
 		
