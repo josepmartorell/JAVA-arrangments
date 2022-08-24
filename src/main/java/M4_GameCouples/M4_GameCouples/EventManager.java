@@ -21,6 +21,18 @@ public class EventManager implements ActionListener{
 		this.gi = gi;
 	}
 	
+
+
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+		if(e.getActionCommand() == "RESTART") {
+			rearrangeColors();
+	
+		}
+		
+	}
+	
 	public Integer[] colorPositioner(){
         Random r = new Random();
         Integer[] colorKey = {1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8};
@@ -66,29 +78,25 @@ public class EventManager implements ActionListener{
 			break;
 		}
 	}
-
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		random = colorPositioner();
-		if(e.getActionCommand() == "RESTART") {
-			colorSwitcher(gi.tg1, random[0]);
-			colorSwitcher(gi.tg2, random[1]);
-			colorSwitcher(gi.tg3, random[2]);
-			colorSwitcher(gi.tg4, random[3]);
-			colorSwitcher(gi.tg5, random[4]);
-			colorSwitcher(gi.tg6, random[5]);
-			colorSwitcher(gi.tg7, random[6]);
-			colorSwitcher(gi.tg8, random[7]);
-			colorSwitcher(gi.tg9, random[8]);
-			colorSwitcher(gi.tg10, random[9]);
-			colorSwitcher(gi.tg11, random[10]);
-			colorSwitcher(gi.tg12, random[11]);
-			colorSwitcher(gi.tg13, random[12]);
-			colorSwitcher(gi.tg14, random[13]);
-			colorSwitcher(gi.tg15, random[14]);
-			colorSwitcher(gi.tg16, random[15]);
 	
-		}
+	public void rearrangeColors() {
+		random = colorPositioner();
+		colorSwitcher(gi.tg1, random[0]);
+		colorSwitcher(gi.tg2, random[1]);
+		colorSwitcher(gi.tg3, random[2]);
+		colorSwitcher(gi.tg4, random[3]);
+		colorSwitcher(gi.tg5, random[4]);
+		colorSwitcher(gi.tg6, random[5]);
+		colorSwitcher(gi.tg7, random[6]);
+		colorSwitcher(gi.tg8, random[7]);
+		colorSwitcher(gi.tg9, random[8]);
+		colorSwitcher(gi.tg10, random[9]);
+		colorSwitcher(gi.tg11, random[10]);
+		colorSwitcher(gi.tg12, random[11]);
+		colorSwitcher(gi.tg13, random[12]);
+		colorSwitcher(gi.tg14, random[13]);
+		colorSwitcher(gi.tg15, random[14]);
+		colorSwitcher(gi.tg16, random[15]);
 		
 	}
 	
