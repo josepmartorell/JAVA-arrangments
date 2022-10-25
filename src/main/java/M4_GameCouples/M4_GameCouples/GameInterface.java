@@ -48,112 +48,112 @@ public class GameInterface extends JFrame {
 		tg1 = new JToggleButton("");
 		tg1.setBackground(Color.MAGENTA);
 		tg1.setBounds(10, 10, 100, 100);
-		tg1.setSelected(true);
+		tg1.setSelected(false);
 		tg1.addActionListener(em);
 		panel.add(tg1);
 		
 		tg2 = new JToggleButton("");
 		tg2.setBackground(Color.WHITE);
 		tg2.setBounds(120, 10, 100, 100);
-		tg2.setSelected(true);
+		tg2.setSelected(false);
 		tg2.addActionListener(em);
 		panel.add(tg2);
 		
 		tg3 = new JToggleButton("");
 		tg3.setBackground(Color.BLUE);
 		tg3.setBounds(230, 10, 100, 100);
-		tg3.setSelected(true);
+		tg3.setSelected(false);
 		tg3.addActionListener(em);
 		panel.add(tg3);
 		
 		tg4 = new JToggleButton("");
 		tg4.setBackground(Color.BLACK);
 		tg4.setBounds(340, 10, 100, 100);
-		tg4.setSelected(true);
+		tg4.setSelected(false);
 		tg4.addActionListener(em);
 		panel.add(tg4);
 		
 		tg5 = new JToggleButton("");
 		tg5.setBackground(Color.ORANGE);
 		tg5.setBounds(10, 120, 100, 100);
-		tg5.setSelected(true);
+		tg5.setSelected(false);
 		tg5.addActionListener(em);
 		panel.add(tg5);
 		
 		tg6 = new JToggleButton("");
 		tg6.setBackground(Color.RED);
 		tg6.setBounds(120, 120, 100, 100);
-		tg6.setSelected(true);
+		tg6.setSelected(false);
 		tg6.addActionListener(em);
 		panel.add(tg6);
 		
 		tg7 = new JToggleButton("");
 		tg7.setBackground(Color.CYAN);
 		tg7.setBounds(230, 120, 100, 100);
-		tg7.setSelected(true);
+		tg7.setSelected(false);
 		tg7.addActionListener(em);
 		panel.add(tg7);
 		
 		tg8 = new JToggleButton("");
 		tg8.setBackground(Color.YELLOW);
 		tg8.setBounds(340, 120, 100, 100);
-		tg8.setSelected(true);
+		tg8.setSelected(false);
 		tg8.addActionListener(em);
 		panel.add(tg8);
 		
 		tg9 = new JToggleButton("");
 		tg9.setBackground(Color.MAGENTA);
 		tg9.setBounds(10, 230, 100, 100);
-		tg9.setSelected(true);
+		tg9.setSelected(false);
 		tg9.addActionListener(em);
 		panel.add(tg9);
 		
 		tg10 = new JToggleButton("");
 		tg10.setBackground(Color.WHITE);
 		tg10.setBounds(120, 230, 100, 100);
-		tg10.setSelected(true);
+		tg10.setSelected(false);
 		tg10.addActionListener(em);
 		panel.add(tg10);
 		
 		tg11 = new JToggleButton("");
 		tg11.setBackground(Color.BLUE);
 		tg11.setBounds(230, 230, 100, 100);
-		tg11.setSelected(true);
+		tg11.setSelected(false);
 		tg11.addActionListener(em);
 		panel.add(tg11);
 		
 		tg12 = new JToggleButton("");
 		tg12.setBackground(Color.BLACK);
 		tg12.setBounds(340, 230, 100, 100);
-		tg12.setSelected(true);
+		tg12.setSelected(false);
 		tg12.addActionListener(em);
 		panel.add(tg12);
 		
 		tg13 = new JToggleButton("");
 		tg13.setBackground(Color.ORANGE);
 		tg13.setBounds(10, 340, 100, 100);
-		tg13.setSelected(true);
+		tg13.setSelected(false);
 		tg13.addActionListener(em);
 		panel.add(tg13);
 		
 		tg14 = new JToggleButton("");
 		tg14.setBackground(Color.RED);
 		tg14.setBounds(120, 340, 100, 100);
-		tg14.setSelected(true);
+		tg14.setSelected(false);
 		tg14.addActionListener(em);
 		panel.add(tg14);
 		
 		tg15 = new JToggleButton("");
 		tg15.setBackground(Color.CYAN);
 		tg15.setBounds(230, 340, 100, 100);
-		tg15.setSelected(true);
+		tg15.setSelected(false);
 		tg15.addActionListener(em);
 		panel.add(tg15);
 		
 		tg16 = new JToggleButton("");
 		tg16.setBackground(Color.YELLOW);
 		tg16.setBounds(340, 340, 100, 100);
-		tg16.setSelected(true);
+		tg16.setSelected(false);
 		tg16.addActionListener(em);
 		panel.add(tg16);
 		
