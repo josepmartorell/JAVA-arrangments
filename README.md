@@ -1,2 +1,3 @@
-# M4-GameCouples
-M4-Games
+# Snippets JAVA arrangements :smoking:
+- rearrange array
+- word splitter
